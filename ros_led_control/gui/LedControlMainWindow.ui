@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LedControlMainWindow</class>
+ <widget class="QMainWindow" name="LedControlMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>544</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0,0,0,0,0,0" columnstretch="1,0,0,0,0,0">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item row="2" column="5">
+     <widget class="QComboBox" name="comboBoxBehavior">
+      <item>
+       <property name="text">
+        <string>Unknown Behavior</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Off</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>On</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Toggle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pulse</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButtonTurnOffLeds">
+      <property name="text">
+       <string>Turn Off LEDs</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="QComboBox" name="comboBoxGroupBehavior">
+      <item>
+       <property name="text">
+        <string>Unknown Group Behavior</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>No LEDs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Single LED</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>All LEDs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cascade LEDs Forward</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cascade LEDs Reverse</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="6" column="2" colspan="2">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelTitlePulsePeriod">
+      <property name="text">
+       <string>Pulse Period (ms)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="labelTitlePulseOffSteps">
+      <property name="text">
+       <string>Pulse Off Steps / cycle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="lineEditPulseOffSteps"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelTitleSetupSection">
+      <property name="text">
+       <string>LED Control Setup:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLabel" name="labelTitleBehavior">
+      <property name="text">
+       <string>Select Behavior</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="labelTitlePulseToggleSteps">
+      <property name="text">
+       <string>Pulse Toggle Steps / cycle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2" colspan="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLabel" name="labelTitleGroupBehavior">
+      <property name="text">
+       <string>Select Group Behavior</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEditPulsePeriod"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineEditPulseToggleSteps"/>
+    </item>
+    <item row="0" column="5">
+     <widget class="QPushButton" name="pushButtonSendControl">
+      <property name="text">
+       <string>Send Current Control</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButtonSendControlSetup">
+      <property name="text">
+       <string>Send Control Setup</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>544</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
